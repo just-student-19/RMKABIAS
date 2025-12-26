@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1036095606996",
+    "project_id": "lesson-7-fire-auth",
+    "storage_bucket": "lesson-7-fire-auth.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036095606996:android:9b355dfe966a61088a2b41",
+        "android_client_info": {
+          "package_name": "com.example.oya.firebaseauth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeCQvlRRp3lnOw95H5M7z8SQsAy7Lfd2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
