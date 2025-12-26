@@ -43,8 +43,6 @@ public class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.ViewHolder
         holder.address.setText(place.getAddress());
         holder.category.setText(place.getCategory());
 
-        // Здесь можно установить изображение
-        // holder.image.setImageResource(place.getImageResId());
 
         holder.cardView.setOnClickListener(v -> {
             if (listener != null) {

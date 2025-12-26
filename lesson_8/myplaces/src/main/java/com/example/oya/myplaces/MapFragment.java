@@ -56,10 +56,8 @@ public class MapFragment extends Fragment {
     public void showPlaceOnMap(Place place) {
         if (mapView == null) return;
 
-        // Очищаем старые маркеры
         mapView.getOverlays().clear();
 
-        // Добавляем маркер для выбранного места
         Marker marker = new Marker(mapView);
         GeoPoint point = new GeoPoint(place.getLatitude(), place.getLongitude());
         marker.setPosition(point);
@@ -74,10 +72,8 @@ public class MapFragment extends Fragment {
 
         mapView.getOverlays().add(marker);
 
-        // Центрируем карту на маркере
         mapView.getController().animateTo(point);
 
-        // Если есть разрешение, показываем наше местоположение
         if (ContextCompat.checkSelfPermission(requireContext(),
                 Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             if (locationOverlay == null) {

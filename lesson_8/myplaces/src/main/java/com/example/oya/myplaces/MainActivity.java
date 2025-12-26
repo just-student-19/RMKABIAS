@@ -21,18 +21,15 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Создаем фрагменты
         mapFragment = new MapFragment();
         listFragment = new PlacesListFragment();
         listFragment.setOnPlaceSelectedListener(this);
 
-        // Показываем список заведений по умолчанию
         showFragment(listFragment, false);
     }
 
     @Override
     public void onPlaceSelected(Place place) {
-        // Показываем карту с выбранным местом
         showFragment(mapFragment, true);
         mapFragment.showPlaceOnMap(place);
     }
